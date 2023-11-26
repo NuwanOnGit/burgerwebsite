@@ -928,77 +928,94 @@ section{
 
 
 
-
-
-
-
-
-.footer .grid{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-   gap:1.5rem;
-   align-items: flex-start;
-}
-
-.footer .grid .box{
-   border:var(--border);
-   padding:2rem;
+/* Footer CSS stars here --------------------------------------------------*/
+footer{
+   background-color: #000;
+   color: #fff;
    text-align: center;
+   padding: 20px;
+   margin-top: 20px;
+   z-index: 1;
+   
 }
-
-.footer .grid .box img{
-   height: 10rem;
-   width: 100%;
-   object-fit: contain;
-   margin-bottom: .5rem;
+.footerContainer{
+   width:100%;
+   padding: 70px 30px 20px; 
 }
-
-.footer .grid .box h3{
-   margin:1rem 0;
-   font-size: 2rem;
-   color:var(--black);
-   text-transform: capitalize;
-}
-
-.footer .grid .box p,
-.footer .grid .box a{
-   display: block;
-   font-size: 1.7rem;
-   color:var(--light-color);
-   line-height: 1.8;
-}
-
-.footer .grid .box a:hover{
-   text-decoration: underline;
-}
-
-.credit{
-   padding:3rem 2rem;
-   text-align: center;
-   background-color: var(--black);
-   color:var(--white);
-   font-size: 2rem;
-   text-transform: capitalize;
-   /* padding-bottom: 10rem; */
-}
-
-.credit span{
-   color:var(--yellow);
-}
-
-.loader{
-   position: fixed;
-   top:0; left:0; right:0; bottom: 0;
-   z-index: 1000000;
-   background-color: var(--white);
+.socialIcons{
    display: flex;
-   align-items: center;
    justify-content: center;
+  
+}
+.socialIcons a{
+   text-decoration: none;
+   padding: 10px;
+   margin: 10px;
+   background-color: #000000;
+   border-radius: 100%;
+   
+}
+.socialIcons a i{
+   color: #ffffff;
+   font-size: 2rem;
+   opacity: 0.9;
+}   
+/* hover effect on Social Icons */
+.socialIcons a i:hover{
+   color:#fed330 ;
+   transition: 0.5s;
+}
+.footerNav {
+   margin: 30px 0;  
+}
+.footerNav ul{
+   display: flex;
+   justify-content: center;
+   list-style: none;
+}
+.footerNav ul li{
+   color: white;
+   margin: 20px;
+   text-decoration: none;
+   font-size: 1.3rem;
+   opacity: 0.7;
+   transition: 0.5s;
+}
+.footerNav ul li:hover{
+   opacity: 1;
+   transition: 0.5s;
+}
+.footerNav ul li a{
+   text-decoration: none;
+   color: #fff;
+}
+.footerBottom{
+   background-color: #000;
+   padding:20px;
+   text-align: center;
+}
+.footerBottom p{
+   color: #fff;
+   opacity: 0.7;
+   font-size: 1.2rem;
+}
+@media (max-width:700px){
+   .footerNav ul{
+       flex-direction: column;
+   }
+   .footerNav ul li{
+       width: 100%;
+       text-align: center;
+       margin: 10px ;
+   }
 }
 
-.loader img{
-   height: 25rem;
-}
+/* Footer css End here -----------------------------------------------------------*/
+
+
+
+
+
 
 
 

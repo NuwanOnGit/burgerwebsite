@@ -43,7 +43,7 @@ include 'components/add_cart.php';
 
       <div class="swiper-wrapper">
 
-         <div class="swiper-slide slide">
+         <!-- <div class="swiper-slide slide">
             <div class="content">
                <span>order online</span>
                <h3>delicious pizza</h3>
@@ -52,12 +52,13 @@ include 'components/add_cart.php';
             <div class="image">
                <img src="images/home-img-1.png" alt="">
             </div>
-         </div>
+         </div> -->
 
          <div class="swiper-slide slide">
             <div class="content">
-               <span>order online</span>
                <h3>chezzy hamburger</h3>
+               <span>order online</span>
+               <br>
                <a href="menu.html" class="btn">see menus</a>
             </div>
             <div class="image">
@@ -65,7 +66,7 @@ include 'components/add_cart.php';
             </div>
          </div>
 
-         <div class="swiper-slide slide">
+         <!-- <div class="swiper-slide slide">
             <div class="content">
                <span>order online</span>
                <h3>rosted chicken</h3>
@@ -74,7 +75,7 @@ include 'components/add_cart.php';
             <div class="image">
                <img src="images/home-img-3.png" alt="">
             </div>
-         </div>
+         </div> -->
 
       </div>
 
@@ -84,7 +85,7 @@ include 'components/add_cart.php';
 
 </section>
 
-<section class="category">
+<!-- <section class="category">
 
    <h1 class="title">food category</h1>
 
@@ -112,8 +113,33 @@ include 'components/add_cart.php';
 
    </div>
 
-</section>
+</section> -->
+<!-- Category section starts here -->
+<section class="category">
 
+<h1 class="title">Explore</h1>
+
+<div class="box-container">
+
+   <a href="" class="box">
+      <img src="images/cat-1.png" alt="">
+      <h3>Value Packs</h3>
+   </a>
+
+   <a href="" class="box">
+      <img src="images/cat-2.png" alt="">
+      <h3>Cutomized Burgers</h3>
+   </a>
+
+   <a href="" class="box">
+      <img src="images/cat-3.png" alt="">
+      <h3>Beverages</h3>
+   </a>
+
+</div>
+
+</section>
+<!-- Category section ends here -->
 
 
 
@@ -159,7 +185,62 @@ include 'components/add_cart.php';
 
 </section>
 
+<!-- Testamonials section start -->
+<section class="reviews">
 
+<h1 class="title">What our customers Say !</h1>
+
+<div class="swiper reviews-slider">
+
+   <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide">
+         <img src="images/pic-1.png" alt="">
+         <p>Food was amazing and up to standard. Staff members are friendly and great service.</p>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <h3>Aravinda</h3>
+      </div>
+
+      <div class="swiper-slide slide">
+         <img src="images/pic-2.png" alt="">
+         <p>The Food is really good and enjoyable. When crowded the service time is quite slow they need to have more staff, reason for the one less star. One of the best places for good.</p>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+         </div>
+         <h3>Mira</h3>
+      </div>
+
+      <div class="swiper-slide slide">
+         <img src="images/pic-3.png" alt="">
+         <p> Best Place and affordable to have a good burgers. Very quick and good service. Cleaniness standards maintained.</p>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+         </div>
+         <h3>Kasun</h3>
+      </div>
+
+   </div>
+
+   <div class="swiper-pagination"></div>
+
+</div>
+
+</section>
+<!-- Testamonials section Endd -->
 
 
 
@@ -186,6 +267,31 @@ include 'components/add_cart.php';
 
 <script>
 
+var swiper = new Swiper(".reviews-slider", {
+   loop:true,
+   grabCursor: true,
+   spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+   breakpoints: {
+      0: {
+      slidesPerView: 1,
+      },
+      700: {
+      slidesPerView: 2,
+      },
+      1024: {
+      slidesPerView: 3,
+      },
+   },
+});
+
+</script>
+
+<!-- <script>
+
 var swiper = new Swiper(".hero-slider", {
    loop:true,
    grabCursor: true,
@@ -196,7 +302,7 @@ var swiper = new Swiper(".hero-slider", {
    },
 });
 
-</script>
+</script> -->
 
 </body>
 </html>

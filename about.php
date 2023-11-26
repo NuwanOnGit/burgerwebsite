@@ -207,6 +207,7 @@ if(isset($_SESSION['user_id'])){
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 
+
 <script>
 
 var swiper = new Swiper(".reviews-slider", {
